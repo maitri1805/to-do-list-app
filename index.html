@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>to-do list app</title>
+</head>
+
+<body>
+
+    <main>
+        <div class="left_section">
+            <div class="heading">
+                <h1>TO-DO <span class="color"> List</span></h1>
+                
+            </div>
+            <div class="content">
+                <span id="element"></span>
+                <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+            </div>
+            <div class="task_box"></div>
+            <div class="task-count-stats completed-task">
+                <div class="total-task">
+                    📝 Tasks: <span id="completed-task"> 0</span> / <span id="total-task"> 0</span>
+                </div>
+            
+            </div>
+        </div>
+    
+        <div class="right_section">
+            <div class="screen-backdrop"></div>
+            <div class="categories"></div>
+        </div>
+    
+        <div class="task-screen category-screen">
+            <div class="head-wrapper">
+                <div class="back-btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 15.75L3 12m0 0l3.75-3.75M3 12h18" />
+                    </svg>
+                </div>
+            </div>
+    
+            <div class="task-content">
+                <img src="personal_list.png" alt="" id="category-img">
+                <div class="details">
+                    <p>0 task</p>
+                    <h1>Category Tasks</h1>
+                </div>
+            </div>
+    
+            <div class="tasks-wrapper">
+                <div class="tasks"></div>
+            </div>
+    
+            <div class="add-task-btn">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
+                </svg>
+            </div>
+    
+            <div class="black-backdrop"></div>
+            <div class="add-task">
+                <div class="add-task-backdrop"></div>
+                <h1 class="heading">Add Task</h1>
+                <div class="input-group">
+                    <label for="task-input">Tasks</label>
+                    <input type="text" id="task-input" required>
+                </div>
+                <div class="input-group">
+                    <label for="category-select">Category</label>
+                    <select id="category-select"></select>
+                </div>
+                <div class="btns">
+                    <button class="cancle-btn">Cancel</button>
+                    <button class="add-btn">Add</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,5 +1,3 @@
-# to-do-list-app
-
 📝 To-Do List App
 A visually engaging and interactive To-Do List Web Application that helps users manage tasks efficiently across various categories like Personal, Work, Shopping, Education, Health, and Finance. Tasks are stored using browser localStorage and organized in a user-friendly layout with responsive design.
 
