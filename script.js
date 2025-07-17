@@ -30,13 +30,7 @@ document.addEventListener("DOMContentLoaded", function () {
   ];
 
   // ✅ Load from localStorage or fallback to default tasks
-  let tasks = JSON.parse(localStorage.getItem("tasks")) || [
-    { id: 1, task: "Go to market", category: "Shopping", completed: false },
-    { id: 2, task: "Go to school", category: "Education", completed: false },
-    { id: 3, task: "Pay light bill", category: "Finance", completed: true },
-    { id: 4, task: "Buy dream house", category: "Personal", completed: false },
-    { id: 5, task: "Go to gym", category: "Health", completed: true },
-  ];
+ let tasks = JSON.parse(localStorage.getItem("tasks")) || [];
 
   function saveTasksToLocal() {
     localStorage.setItem("tasks", JSON.stringify(tasks));
